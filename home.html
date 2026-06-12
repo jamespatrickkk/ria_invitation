@@ -34,6 +34,7 @@
             overflow: hidden;
         }
 
+        /* FLOATING LIGHT ORBS */
         body::before,
         body::after {
             content: "";
@@ -69,6 +70,7 @@
             }
         }
 
+        /* CARD */
         .invitation-card {
             position: relative;
             background: linear-gradient(180deg, #fff, var(--card));
@@ -82,6 +84,7 @@
             margin: 0 auto;
         }
 
+        /* RIBBON */
         .ribbon {
             position: absolute;
             top: -18px;
@@ -114,11 +117,12 @@
             right: 0;
         }
 
+        /* TEXT */
         .invited-text {
             color: var(--accent);
             letter-spacing: 3px;
             text-transform: uppercase;
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             margin-top: 20px;
             animation: fadeUp 1s ease;
         }
@@ -127,7 +131,7 @@
             font-family: 'Great Vibes', cursive;
             font-size: 5.5rem;
             color: var(--accent);
-            margin: 20px 0;
+            margin: 30px 0;
             transition: 0.3s;
             text-shadow: 0 0 10px rgba(178, 34, 34, 0.3);
         }
@@ -137,8 +141,7 @@
             transform: scale(1.03);
         }
 
-        .hosted,
-        .description {
+        .hosted{
             color: var(--muted);
             font-size: 1.1rem;
             line-height: 1.8;
@@ -146,10 +149,16 @@
             animation: fadeUp 1.2s ease forwards;
         }
 
-        .description {
+        .description{
+            color: var(--muted);
+            font-size: 1.25rem;
+            line-height: 1.9;
+            opacity: 0;
+            animation: fadeUp 1.2s ease forwards;
             animation-delay: 0.3s;
         }
 
+        /* SPARKLES */
         .sparkle {
             position: absolute;
             color: white;
@@ -194,6 +203,7 @@
             }
         }
 
+        /* FALLING CONFETTI */
         .confetti {
             position: absolute;
             top: -10px;
@@ -210,6 +220,7 @@
             }
         }
 
+        /* ANIMATIONS */
         @keyframes fadeUp {
             from {
                 opacity: 0;
@@ -275,11 +286,13 @@
 
 <body>
 
+    <!-- sparkles -->
     <div class="sparkle">✦</div>
     <div class="sparkle">✦</div>
     <div class="sparkle">✦</div>
     <div class="sparkle">✦</div>
 
+    <!-- confetti -->
     <script>
         for (let i = 0; i < 25; i++) {
             let confetti = document.createElement("div");
@@ -303,21 +316,18 @@
             <p class="hosted">
                 Located at Laurel St., Quiling, Talisay, Batangas
             </p>
-             <p class="hosted">
-               Miserali's Residence
-            </p>
-
 
             <p class="description">
-                A Thanksgiving Celebration in Honor of Ria’s success in the CPA Licensure Examination. You are
-                respectfully invited to join us in a celebration. We look forward to sharing this joyous moment with
-                you.
+                You are respectfully invited to join us in a celebration of gratitude for the blessings of the past
+                year. Let us come together to share a feast, enjoy meaningful moments, and create lasting memories.
             </p>
 
             <div class="row mt-4 footer">
                 <div class="col-6">June 27, 2026</div>
-                <div class="col-6">5:00 PM</div>
+                <div class="col-6">4:00 PM</div>
             </div>
+
+            <a href="https://www.google.com/maps?q=14.0966777,121.0367565" target="_blank" class="map-link">📍 View Location on Maps</a>
 
         </div>
     </div>
